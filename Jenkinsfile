@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from Git repository
-                git 'https://github.com/Sriharsha-Uppala/devOps.git'
+                git clone 'https://github.com/Sriharsha-Uppala/devOps.git'
             }
         }
         stage('Build image') {
