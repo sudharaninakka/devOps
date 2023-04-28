@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the code from Git repository
-                git 'https://github.com/Sriharsha-Uppala/devOps.git'
-            }
+        stage('Checkout Git') {
+            stage('Checkout Git') {
+            steps {
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Rajesh3284/devOps.git']]])
+            }
         }
         stage('Build image') {
             steps {
