@@ -16,7 +16,7 @@ pipeline {
         stage('Push image to Docker Hub') {
             steps {
                 // Push the Docker image to Docker Hub repository
-                sh 'docker push sriharsha7/devops:mysite'
+                sh 'docker push sudharaninakka/devops:mysite'
             }
         }
         stage('Deploy to Kubernetes') {
