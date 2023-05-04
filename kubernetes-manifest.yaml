@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: sriharsha7/devops:mysite
+        image: sudharaninakka/devOps:mysite
         ports:
         - containerPort: 8080
         env:
